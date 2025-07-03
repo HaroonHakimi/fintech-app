@@ -26,6 +26,7 @@ const Page = () => {
       await signUp!.create({
         phoneNumber: fullNumber,
       });
+      signUp!.preparePhoneNumberVerification();
       router.push(`/verify/${fullNumber}`);
     } catch (error) {
       console.log(error);

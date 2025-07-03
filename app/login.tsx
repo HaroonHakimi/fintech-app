@@ -48,8 +48,13 @@ const Page = () => {
           phoneNumberId,
         });
 
-        router.push({pathname: '/verify/[phone]', params: {phone: fullNumber, signin: 'true'}});
-      } catch (error) {}
+        router.push({
+          pathname: "/verify/[phone]",
+          params: { phone: fullNumber, signin: "true" },
+        });
+      } catch (error) {
+        
+      }
     }
   };
 
